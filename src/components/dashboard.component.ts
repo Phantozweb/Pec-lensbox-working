@@ -1,5 +1,5 @@
 import { Component, inject, ElementRef, ViewChild, AfterViewInit, effect } from '@angular/core';
-import { StoreService } from '../services/store.service';
+import { StoreService } from '../services/store.service.ts';
 import { CommonModule } from '@angular/common';
 
 declare const d3: any;

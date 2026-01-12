@@ -20,12 +20,7 @@ try {
     target: "esnext",
     minify: true,
     keepNames: true,
-    external: [
-      "@angular/*",
-      "@google/*",
-      "rxjs",
-      "rxjs/*"
-    ]
+    // Externals removed to allow full bundling
   });
 
   console.log("Bundle created.");

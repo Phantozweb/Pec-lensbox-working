@@ -1,10 +1,10 @@
 import { Routes, Router } from '@angular/router';
-import { LoginComponent } from './components/login.component';
-import { DashboardComponent } from './components/dashboard.component';
-import { FeedbackListComponent } from './components/feedback-list.component';
-import { SettingsComponent } from './components/settings.component';
+import { LoginComponent } from './components/login.component.ts';
+import { DashboardComponent } from './components/dashboard.component.ts';
+import { FeedbackListComponent } from './components/feedback-list.component.ts';
+import { SettingsComponent } from './components/settings.component.ts';
 import { inject } from '@angular/core';
-import { StoreService } from './services/store.service';
+import { StoreService } from './services/store.service.ts';
 
 const authGuard = () => {
   const store = inject(StoreService);

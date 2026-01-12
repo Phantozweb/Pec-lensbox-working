@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { StoreService } from './services/store.service';
+import { StoreService } from './services/store.service.ts';
 import { CommonModule } from '@angular/common';
 
 @Component({

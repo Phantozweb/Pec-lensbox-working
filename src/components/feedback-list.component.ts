@@ -1,8 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { StoreService, FeedbackItem } from '../services/store.service';
-import { GeminiService } from '../services/gemini.service';
+import { StoreService, FeedbackItem } from '../services/store.service.ts';
+import { GeminiService } from '../services/gemini.service.ts';
 
 @Component({
   selector: 'app-feedback-list',

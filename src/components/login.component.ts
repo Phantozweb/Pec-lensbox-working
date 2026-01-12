@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { StoreService } from '../services/store.service';
+import { StoreService } from '../services/store.service.ts';
 import { Router } from '@angular/router';
 
 @Component({

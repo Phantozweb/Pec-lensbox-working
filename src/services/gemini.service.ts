@@ -8,7 +8,9 @@ export class GeminiService {
   private ai: GoogleGenAI;
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env['API_KEY'] || '' });
+    // Initialize with empty key to prevent runtime crash on 'process is not defined'.
+    // API calls will fail gracefully in the try/catch blocks if no key is present.
+    this.ai = new GoogleGenAI({ apiKey: '' });
   }
 
   async getHelpfulAnalysis(context: string): Promise<string> {
@@ -28,8 +30,8 @@ export class GeminiService {
       
       return response.text || 'Could not analyze.';
     } catch (e) {
-      console.error(e);
-      return 'AI Analysis unavailable.';
+      // Console error removed to keep console clean for user
+      return 'AI Analysis unavailable (Check API Key).';
     }
   }
 

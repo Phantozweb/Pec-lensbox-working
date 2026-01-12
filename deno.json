@@ -4,6 +4,11 @@
     "dev": "deno run -A npm:vite",
     "preview": "deno run -A npm:vite preview"
   },
+  "nodeModulesDir": "auto",
+  "imports": {
+    "esbuild": "npm:esbuild@0.20.2",
+    "@luca/esbuild-deno-loader": "jsr:@luca/esbuild-deno-loader@0.10.3"
+  },
   "compilerOptions": {
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

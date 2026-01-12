@@ -5,6 +5,8 @@
     "preview": "deno run -A npm:vite preview"
   },
   "compilerOptions": {
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
   }
 }

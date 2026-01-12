@@ -1,11 +1,12 @@
 {
   "tasks": {
-    "build": "deno run -A npm:vite build",
+    "build": "deno run -A scripts/build.ts",
     "dev": "deno run -A npm:vite",
     "preview": "deno run -A npm:vite preview"
   },
   "compilerOptions": {
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "strict": true,
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
   }

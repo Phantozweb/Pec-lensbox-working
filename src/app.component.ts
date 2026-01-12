@@ -52,9 +52,9 @@ import { CommonModule } from '@angular/common';
       </main>
 
       <!-- Watermark Footer (Fixed) -->
-      <div class="fixed bottom-2 right-4 pointer-events-none z-50 opacity-40 hover:opacity-100 transition-opacity">
-        <p class="text-[10px] text-slate-500 font-medium bg-white/80 backdrop-blur px-2 py-1 rounded-full border border-slate-100 shadow-sm">
-          Presented from Focuslinks.in by Janarthan veeramani
+      <div class="fixed bottom-2 right-4 pointer-events-none z-50 opacity-80 hover:opacity-100 transition-opacity">
+        <p class="text-[10px] text-slate-500 font-semibold bg-white/90 backdrop-blur px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
+          Presented by Focuslinks.in
         </p>
       </div>
     </div>
